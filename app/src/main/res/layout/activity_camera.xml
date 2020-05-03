@@ -58,23 +58,11 @@
                     android:text="  " />
 
                 <TextView
-                    android:id="@+id/latencyLabel"
-                    android:layout_width="match_parent"
-                    android:layout_height="13dp"
-                    android:layout_weight="1"
-                    android:background="@android:color/black"
-                    android:text="Latency:"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/white"
-                    android:textSize="18sp" />
-
-                <TextView
                     android:id="@+id/inference_info"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@android:color/black"
-                    android:text="300"
                     android:textAlignment="center"
                     android:textColor="@android:color/white"
                     android:textSize="18sp" />
@@ -100,7 +88,7 @@
                 android:id="@+id/sign"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Made by Nicolò Bartelucci and Milo Marchetti"
+                android:text="Magic!!"
                 android:textAlignment="center"
                 android:textColor="@android:color/white" />
         </LinearLayout>

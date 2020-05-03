@@ -207,10 +207,12 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
                 result.setLocation(location);
                 mappedRecognitions.add(result);
+                System.out.println("Aparna"+result.getTitle());
               }
             }
 
             tracker.trackResults(mappedRecognitions, currTimestamp);
+            toSpeech(mappedRecognitions);
             trackingOverlay.postInvalidate();
 
             computingDetection = false;
@@ -219,7 +221,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                 new Runnable() {
                   @Override
                   public void run() {
-                    showInference(lastProcessingTimeMs + "ms");
+//                    showInference(lastProcessingTimeMs + "ms");
                   }
                 });
           }
